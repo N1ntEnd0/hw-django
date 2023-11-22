@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/main.css' %}" />
+
+<div class="container">
+  {% for value in posts %}
+    <a class="post" href="{{ value.link }}">
+      <img class="photo" src="{{ value.photo }}">
+      <div class="description">
+        <div class="title">{{ value.name }}</div>
+        <div class="text">{{ value.short_description }}</div>
+      </div>
+    </a>
+  {% endfor %}
+</div>
+{% endblock %}

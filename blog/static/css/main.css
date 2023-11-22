@@ -1,0 +1,33 @@
+.container {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 16px;
+}
+
+.post {
+    display: flex;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.photo {
+    height: 80px;
+    width: 80px;
+    border-radius: 5px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+}

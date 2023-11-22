@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/post.css' %}" />
+
+<div class="container">
+    <div class="title">{{ post.name }}</div>
+    <img class="photo" src="{{ post.photo }}">
+    <div class="text">{{ post.description }}</div>
+</div>
+{% endblock %}

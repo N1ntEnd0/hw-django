@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/about.css' %}" />
+
+<div class="container">
+  <h2 class="title">{{ title }}</h2>
+  <div class="text">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci alias
+    aliquam amet aut culpa dolor explicabo inventore iure iusto maxime minima
+    modi, numquam perspiciatis quae, quas sequi soluta, voluptatem.
+  </div>
+</div>
+{% endblock %}
